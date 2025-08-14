@@ -3,6 +3,7 @@
 <html>
   <head>
     <title>Brigadeiro</title>
+        <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
 
     <style>
                 * {
@@ -14,12 +15,26 @@
           display: flex;
           justify-content: center;
         }
+
+        nav{
+          margin-bottom: 30px;
+          text-align: right;
+        }
+        nav a{
+          text-decoration: none;
+          
+        }
+
+        nav a:hover{
+          background: #40271e;
+          color: #FFF;
+        }
         body{
           background: #FFF;
           width: 900px;
           padding: 30px;
         }
-        h1, h3, h5{
+        h1, h3{
           background: #312c2c;
           color: #fff;
         }
@@ -47,6 +62,18 @@
           width: 100%;
           height: 480px;
         }
+          footer p{
+          text-align: center;
+        }
+          .container{
+          display: flex;
+          justify-content: space-around;
+          align-content: center;
+        }
+
+        .container li{
+          list-style-type: none;
+        }
       
     </style>
   </head>
@@ -73,7 +100,7 @@
     </section>
     <hr />
 
-    <section>
+    <section class="container">
       <table>
         <tr>
           <th>Tempo</th>
@@ -99,7 +126,7 @@
 
     <section>
         <h3>Ingredientes</h3>
-        <ul>
+        <ul class="container">
             <li>
                 <img src="./public/img_musse/milk_.jpg" alt="">
                     <p>1 lata de leite condensado</p>
@@ -126,13 +153,16 @@
 
     <section>
         <h3>Utensílios</h3>
-        <li><img src="./public/img_brigadeiro/pan.jpg" alt=""><p>Panela</p><a href="">Comprar</a>
-        </li>
-        <li><img src="./public/img_brigadeiro/copo_medidor.jpg" alt=""><p>Copo medidor</p><a href="">Comprar</a>
-        </li>
-        <li><img src="./public/img_brigadeiro/espatula.jpg" alt=""><p>Espatula</p><a href="">Comprar</a>
-        </li>
-        <li><img src="./public/img_brigadeiro/prato_raso.jpg    " alt=""><p>Prato raso</p><a href="">Comprar</a>
+
+        <ul class="container">
+            <li><img src="./public/img_brigadeiro/pan.jpg" alt=""><p>Panela</p><a href="">Comprar</a>
+            </li>
+            <li><img src="./public/img_brigadeiro/copo_medidor.jpg" alt=""><p>Copo medidor</p><a href="">Comprar</a>
+            </li>
+            <li><img src="./public/img_brigadeiro/espatula.jpg" alt=""><p>Espatula</p><a href="">Comprar</a>
+            </li>
+            <li><img src="./public/img_brigadeiro/prato_raso.jpg    " alt=""><p>Prato raso</p><a href="">Comprar</a>
+        </ul>
     </section>
 
     <section>
@@ -149,14 +179,14 @@
       <section>
         <h3>Comentários</h3>
 
-        <ul>
+        <ul class="container">
           <li>3 comentários</li>
           <li><button type="button">Recentes</button></li>
           <li><button type="button">Populares</button></li>
         </ul>
         <hr />
 
-        <ul>
+        <ul class="container">
           <li>
             <div class="comentario">
               <h5>Pedro Alvares</h5>

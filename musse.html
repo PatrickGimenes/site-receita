@@ -3,11 +3,31 @@
 <html>
   <head>
     <title>Musse de limão</title>
+        <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
         <style>
                 * {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             box-sizing: border-box;
         }
+        nav{
+          margin-bottom: 30px;
+          padding: 20px;
+          text-align: right;
+          background-color:  #1a4d12;
+        
+        }
+        nav a{
+          text-decoration: none;
+         
+          color: #FFF;
+          
+        }
+
+        nav a:hover{
+          background: #498b3f;
+
+        }
+
         html{
           background: #1a4d12;
           display: flex;
@@ -18,7 +38,7 @@
           width: 900px;
           padding: 30px;
         }
-        h1, h3, h5{
+        h1, h3{
           background: #498b3f;
           color: #fff;
         }
@@ -29,6 +49,21 @@
           padding: 5px;
         }
 
+        #share li{
+            display: inline;
+        }
+
+        .container{
+          display: flex;
+          justify-content: space-around;
+          align-content: center;
+        }
+
+        .container li{
+          list-style-type: none;
+        }
+        
+
                 th{
           background: #498b3f;
           color: #FFF;
@@ -36,6 +71,7 @@
         }
         td, th{
           border: 1px solid #a67e6f;
+          text-align: center;
         }
 
         table{
@@ -45,6 +81,10 @@
         iframe{
           width: 100%;
           height: 480px;
+        }
+
+        footer p{
+          text-align: center;
         }
       
     </style>
@@ -63,7 +103,7 @@
     <img id="img_home" src="./public/img_musse/musse.jpg" alt="" />
 
     <section>
-      <ul>
+      <ul id="share" >
         <li><a href="">Favoritar</a></li>
         <li><a href="">Compartilhar</a></li>
         <li><a href="">Imprimir</a></li>
@@ -71,7 +111,7 @@
     </section>
     <hr />
 
-    <section>
+    <section class="container">
       <table>
         <tr>
           <th>Tempo</th>
@@ -110,16 +150,17 @@
 
     <section>
         <h3>Ingredientes</h3>
-        <ul>
+        <ul class="container">
             <li>
                 <img src="./public/img_musse/milk_.jpg" alt="">
                     <p>
-1 lata de leite condensado</p>
+                      1 lata de leite condensado
+                    </p>
                 </img>
             </li>
             <li>
                 <img src="./public/img_musse/lemon.jpg" alt="">
-                    <p>1/2 xícara de suco de limão (esse suco é puro mesmo, sem água, é só espremer o limão)</p>
+                    <p>1/2 xícara de suco de limão <br> (esse suco é puro mesmo, <br>sem água, é só espremer o limão)</p>
                 </img>
             </li>
             <li>
@@ -133,6 +174,7 @@
 
     <section>
         <h3>Utensílios</h3>
+        <ul class="container">
         <li><img src="./public/img/liq.jpg" alt=""><p>Liquidificador</p><a href="">Comprar</a>
         </li>
         <li><img src="./public/img_musse/espremedor.jpg" alt=""><p>Espremedor de limão</p><a href="">Comprar</a>
@@ -143,6 +185,7 @@
         </li>
         <li><img src="./public/img_musse/taca.jpg" alt=""><p>Taça de sobremesa</p><a href="">Comprar</a>
         </li>
+        </ul>
     </section>
 
     <section>
@@ -159,17 +202,17 @@
       <section>
         <h3>Comentários</h3>
 
-        <ul>
+        <ul class="container">
           <li>3 comentários</li>
           <li><button type="button">Recentes</button></li>
           <li><button type="button">Populares</button></li>
         </ul>
         <hr />
 
-        <ul>
+        <ul class="container">
           <li>
             <div class="comentario">
-              <h5>Pedro Alvares</h5>
+              <h4>Pedro Alvares</h4>
               <p>*****</p>
               <p>Gostei muito da receita</p>
               <ul>
@@ -182,7 +225,7 @@
 
           <li>
             <div class="comentario">
-              <h5>Pedro Alvares</h5>
+              <h4>Pedro Alvares</h4>
               <p>*****</p>
               <p>Gostei muito da receita</p>
               <ul>
@@ -194,7 +237,7 @@
           </li>
           <li>
             <div class="comentario">
-              <h5>Pedro Alvares</h5>
+              <h4>Pedro Alvares</h4>
               <p>*****</p>
               <p>Gostei muito da receita</p>
               <ul>
@@ -206,7 +249,8 @@
           </li>
         </ul>
       </section>
-
+<hr>
+<br>
     <section>
     <iframe
       width="560"
