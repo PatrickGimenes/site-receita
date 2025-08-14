@@ -3,19 +3,79 @@
 <html lang="pt-BR">
   <head>
     <title>Bolo de Chocolate</title>
+        <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+
+        }
+        html{
+          background: #a67e6f;
+          display: flex;
+          justify-content: center;
+        }
+        body{
+          background: #FFF;
+          width: 900px;
+          padding: 30px;
+        }
+        h1{
+          margin: 0;
+          padding: 30px 5px;
+          background: #40271e;
+          color: #FFF;
+          text-transform: uppercase;
+          letter-spacing: 4px;
+          text-align: center;
+        }
+        h3{
+          color: #593a2e;
+        }
+        /* tabela */
+        th{
+          background: #40271e;
+          color: #FFF;
+         
+        }
+        td, th{
+          border: 1px solid #a67e6f;
+        }
+
+        table{
+          border-collapse: collapse;
+        }
+
+        /* Fim table */
+
+        #home_img{
+          width: 100%;
+          border: 1px solid #40271e;
+          padding: 5px;
+        }
+
+        iframe{
+          width: 100%;
+          height: 480px;
+        }
+
+    </style>
   </head>
 
   <body>
-    <a href="./index.html">Home</a>
+        <nav>
+          <a href="./index.html">Home</a>
+      <a href="./musse.html">Musse de limão</a>
+      <a href="./brigadeiro.html">Brigadeiro</a>
+    </nav>
     <h1>Bolo de chocolate simples</h1>
     <main>
-      <img src="./public/img/cake.jpg" alt="" />
+      <img id="home_img" src="./public/img/cake.jpg" alt="" />
       <!-- <div class="carrossel"></div> -->
       <div class="share">
         <ul>
-          <li>Favoritar</li>
-          <li>Compartilhar</li>
-          <li>Imprimir</li>
+          <li><a href="">Favoritar</a></li>
+          <li><a href="">Compartilhar</a></li>
+          <li><a href="">Imprimir</a></li>
         </ul>
       </div>
       <hr />
@@ -27,7 +87,7 @@
             <th>Porções</th>
           </tr>
           <tr>
-            <td>50 min</td>
+            <td>50 minutos</td>
             <td>Fácil</td>
             <td>12</td>
           </tr>
@@ -235,8 +295,6 @@
     <hr />
 
     <iframe
-      width="560"
-      height="315"
       src="https://www.youtube.com/embed/f-HsbucZMfY?si=1oJ7NfaIJ1aF72Xf"
       title="YouTube video player"
       frameborder="0"
