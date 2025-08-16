@@ -2,55 +2,124 @@
 <html>
   <head>
     <title>Receitas</title>
-    <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon" />
     <style>
-        * {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            box-sizing: border-box;
+      * {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        box-sizing: border-box;
+      }
+      html {
+        background: #a67e6f;
+        display: flex;
+        justify-content: center;
+      }
+      body {
+        background: #fff;
+        width: 900px;
+        padding: 30px;
+      }
+      h1 {
+        margin: 0;
+        padding: 30px 5px;
+        background: #40271e;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        text-align: center;
+      }
+      nav {
+        margin-bottom: 30px;
+        text-align: right;
+      }
+      nav a {
+        text-decoration: none;
+      }
 
-        }
-        html{
-          background: #a67e6f;
-          display: flex;
-          justify-content: center;
-        }
-        body{
-          background: #FFF;
-          width: 900px;
-          padding: 30px;
-        }
-        h1{
-          margin: 0;
-          padding: 30px 5px;
-          background: #40271e;
-          color: #FFF;
-          text-transform: uppercase;
-          letter-spacing: 4px;
-          text-align: center;
-        }
-        nav{
-          margin-bottom: 30px;
-          text-align: right;
-        }
-        nav a{
-          text-decoration: none;
-          
-        }
+      nav a:hover {
+        background: #40271e;
+        color: #fff;
+      }
 
-        nav a:hover{
-          background: #40271e;
-          color: #FFF;
-        }
+      ul {
+        list-style-type: none;
+      }
+      #receitas img {
+        width: 250px;
+      }
+
+      #receitas {
+        margin: 30px;
+        display: flex;
+        justify-content: space-between;
+      }
+      div a {
+        text-decoration: none;
+      }
+
+      img:hover{
+        transform: scale(1.1);
+        
+      }
     </style>
   </head>
   <body>
-    <nav>
-      <a href="./musse.html">Musse de limão</a>
-      <a href="./bolo-chocolate.html">Bolo de chocolate</a>
-      <a href="./brigadeiro.html">Brigadeiro</a>
-    </nav>
-    <h1>Receitas Saborosas</h1>
+    <main>
+      <h1>🍽️ Bem-vindo ao Mata Fome!</h1>
 
-    
+      <p>
+        Aqui você encontra receitas deliciosas, práticas e testadas para todos
+        os gostos e ocasiões.
+      </p>
+
+      <p>
+        Seja você um cozinheiro iniciante ou um amante da gastronomia, temos
+        pratos que vão transformar seu dia a dia na cozinha em uma experiência
+        saborosa!
+      </p>
+
+      <h2>🔍 O que você vai encontrar por aqui:</h2>
+
+      <ul>
+        <li>Receitas rápidas para o dia a dia</li>
+
+        <li>Pratos especiais para impressionar</li>
+
+        <li>Sobremesas irresistíveis</li>
+
+        <li>Dicas de culinária e truques de chef</li>
+
+        <li>Opções vegetarianas, veganas, fitness e muito mais</li>
+
+        <li>Explore, experimente e compartilhe suas receitas favoritas!</li>
+      </ul>
+
+      <h1>Bom apetite! 🍴</h1>
+
+      <section id="receitas">
+        <div>
+          <a href="./bolo-chocolate.html">
+            <img src="./public/img/cake.jpg" alt="bolo" />
+            <p>Bolo de chocolate</p>
+          </a>
+        </div>
+
+        <div>
+          <a href="./brigadeiro.html">
+            <img
+              src="./public/img_brigadeiro/brigadeiro.jpg"
+              alt="Brigadeiro"
+            />
+            <p>Brigadeiro</p>
+          </a>
+        </div>
+
+        <div>
+          <a href="./musse.html">
+            <img src="./public/img_musse/musse.jpg" alt="Musse" />
+            <p>Musse</p>
+          </a>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
